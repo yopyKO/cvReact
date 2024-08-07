@@ -1,0 +1,64 @@
+.navBar{
+  z-index: 100;
+  max-width: auto;
+  width: 100%;
+  background-color: #444 ;
+  font-weight: 600;
+  color: white ;
+}
+li {
+    list-style-image: url("./assets/img/fleche-droite.png");
+}
+#up-button{
+  display: block;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 99;
+  outline: none;
+  background-color: #298eff;
+  border: 1px solid #333;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 20px;
+}
+#up-button.show{
+  display: none;
+}
+link {
+  color:white;
+}
+footer {
+  background-color: #EEE ;
+  display: flex;
+  flex-direction: column;
+}
+.main_footer{
+  padding-left: 1rem;
+}
+.socials {
+  width: 24px;
+  height: 24px;
+  margin-left: 1rem;
+  margin-right: 1rem ;
+}
+.secondary_footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #444;
+  width: 100%;
+  color:white;
+  height: 3rem;
+}
+@media screen and (min-width: 700px) {
+  .main_footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+}

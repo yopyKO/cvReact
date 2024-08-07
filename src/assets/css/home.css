@@ -1,0 +1,16 @@
+.accueil {
+    background: rgba(0 ,0 ,0 , 0.3);
+    background-image: url(../img/room.jpg);   
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0em;
+    justify-content: center ;
+    align-content: center;
+    color: white;
+    -webkit-text-stroke: 0.4px rgb(0, 89, 255);
+    height: 100vh;
+}
+

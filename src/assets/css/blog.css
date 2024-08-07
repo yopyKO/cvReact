@@ -1,0 +1,16 @@
+#cartes_blog{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ width: 90%;
+}
+element.style {
+    width: 23rem;
+    height: 30rem;
+}
+@media screen and (min-width: 900px) {
+    .card{
+        flex-basis: 26%;
+        margin-bottom: 3rem;
+    }
+}

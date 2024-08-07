@@ -46,7 +46,7 @@ function App() {
             <header className="navBar">
               <Navbar expand="lg" class="d-flex position-absolute top-0 start-0 text-light" collapseOnSelect>
                 <Container>
-                  <Navbar.Brand href="/">JOHN DOE</Navbar.Brand>   
+                  <Navbar.Brand as={Link} to="/">JOHN DOE</Navbar.Brand>   
                   <Navbar.Toggle class="right-2" aria-controls="basic-navbar-nav"/> 
                     <Navbar.Collapse id="basic-navbar-nav" class="right-0">
                       <Nav className="me-auto">

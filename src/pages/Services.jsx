@@ -19,7 +19,7 @@ function Services() {
     },
     {
       title: "Référencement",
-      description: "Some description for service 3",
+      description: "le référencement naturel d'un site, aussi appelé SEO, consiste à mettre des techniques pour améliorer sa position dans les résultats des moteurs de recherche.",
       link: "#",
       imageUrl: "./src/assets/img/referencement.png",
     },

@@ -29,22 +29,24 @@ function Services() {
 
   return (
 
-      <div className="text-center d-flex flex-column align-content-center mb-5 mt-5">
-        
-        <h1>Mon offre de services</h1>
-        <p>Voici les prestations sur lesquelles je peux intervenir.</p>
-        <p className="mainUnderline"></p>
+      <div className="text-center d-flex flex-column align-content-center mb-5">
+        <div className="bgBanner"></div>
         <div className="mt-5">
-          <div className="d-flex flex-wrap justify-content-evenly align-content-center mx-auto">
-            {projects.map((project) => (
-              <Card class="" key={project.title} style={{ width: '18rem', height:'20rem', margin: '10px'}}>
-                <Card.Body style={{paddingTop:'4rem'}}>
-                  <Card.Img variant="top" style={{ width: '3rem', height:'3rem', marginBottom:'1rem'}} src={project.imageUrl} />
-                  <strong><Card.Title class="card_title">{project.title}</Card.Title></strong>
-                  <Card.Text>{project.description}</Card.Text>
-                </Card.Body>
-              </Card>
-            ))}
+          <h1>Mon offre de services</h1>
+          <p>Voici les prestations sur lesquelles je peux intervenir.</p>
+          <p className="mainUnderline"></p>
+          <div className="mt-5">
+            <div className="d-flex flex-wrap justify-content-evenly align-content-center mx-auto">
+              {projects.map((project) => (
+                <Card class="" key={project.title} style={{ width: '18rem', height:'20rem', margin: '10px'}}>
+                  <Card.Body style={{paddingTop:'4rem'}}>
+                    <Card.Img variant="top" style={{ width: '3rem', height:'3rem', marginBottom:'1rem'}} src={project.imageUrl} />
+                    <strong><Card.Title class="card_title">{project.title}</Card.Title></strong>
+                    <Card.Text>{project.description}</Card.Text>
+                  </Card.Body>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </div>

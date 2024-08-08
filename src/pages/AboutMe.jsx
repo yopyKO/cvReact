@@ -1,59 +1,7 @@
 import '../assets/css/aboutMe.css';
 
 function AboutMe() {
- /* const [user, setUser] = useState({});
 
-  const fetchUser = async () => {
-    try {
-      const response = await fetch("https://api.github.com/users/github-john-doe");
-      if (!response.ok) {
-        throw new Error(`Failed to fetch user: ${response.status}`);
-      }
-      const data = await response.json();
-      setUser(data);
-    } catch (error) {
-      console.error("Erreur lors de la récupération de l'utilisateur:", error);
-    }
-  };
-
-  useEffect(() => {
-    fetchUser();
-  }, []);
-
-  
-  const skills = [
-    {
-      project: "1",
-      title: "HTML.5",
-      language: "html",
-      rate : "90%",
-    },
-    {
-      project: "2",
-      title: "CSS.3",
-      language: "css",
-      rate : "80%",
-    },
-    {
-      project: "3",
-      title: "JAVASCRIPT",
-      language: "js",
-      rate : "70%",
-    },
-    {
-      project: "4",
-      title: "PHP",
-      language: "php",
-      rate : "60%",
-    },
-    {
-      project: "5",
-      title: "REACT",
-      language: "react",
-      rate : "50%",
-    },
-  ];
-  */
 
   return (
     <div className="d-block p-2 px-5">
@@ -99,21 +47,7 @@ function AboutMe() {
           </section>
         </div>
       </div>
-      {/*}
-      <div className="d-block p-2 bg-primary text-white">
-        {user.id && ( 
-          <article key={user.id} className="card">
-            <h2>{user.name}</h2>
-            <p>{user.bio}</p>
-            <img src={user.avatar_url} alt={user.login} />
-            <p>
-              <a href={user.html_url} target="_blank" rel="noopener noreferrer">
-                {user.html_url}
-              </a>
-            </p>
-          </article>
-        )}
-      </div>*/}
+      
     </div>
   );
 }

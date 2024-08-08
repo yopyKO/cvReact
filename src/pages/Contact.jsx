@@ -43,7 +43,7 @@ function Contact() {
         
           <div id="contact" className="pt-5 text-center d-flex flex-column justify-content-center align-items-center">
             <div className="zoneContact m-4">
-                <div className="me_contacter w-75 d-flex flex-column justify-content-center align-items-center mx-auto">
+                <div className="me_contacter pt-3 w-75 d-flex flex-column justify-content-center align-items-center mx-auto">
                   <h1>Me contacter</h1>
                   <p>Pour me contacter en vue d&#39;un entretien ou d&#39;une future collaboration, merci de remplir le formulaire de contact.</p>
                   <p className="mainUnderline"></p>

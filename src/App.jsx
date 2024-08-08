@@ -49,14 +49,15 @@ function App() {
                   <Navbar.Brand className="text-white" as={Link} to="/">JOHN DOE</Navbar.Brand>   
                   <Navbar.Toggle aria-controls="responsive-navbar-nav" className='bg-secondary'/> 
                     <Navbar.Collapse id="responsive-navbar-nav">
-                      <Nav className="me-auto" id="empty_for_position"></Nav>
+                      <Nav className="me-auto" id="empty_for_position">
+                      </Nav>
                       <Nav>
                         <Nav.Link className="text-white px-3" as={Link} to="/" eventKey={1} onClick={() => { window.scroll({ top: 0, left: 0, behavior: "smooth", }); }}>Accueil</Nav.Link>
                         <Nav.Link className="text-white px-3" as={Link} to="/services" eventKey={1} onClick={() => { window.scroll({ top: 0, left: 0, behavior: "smooth", }); }}>Services</Nav.Link>
                         <Nav.Link className="text-white px-3" as={Link} to="/achievements" eventKey={1} onClick={() => { window.scroll({ top: 0, left: 0, behavior: "smooth", }); }}>Réalisations</Nav.Link>
                         <Nav.Link className="text-white px-3" as={Link} to="/blog" eventKey={1} onClick={() => { window.scroll({ top: 0, left: 0, behavior: "smooth", }); }}>Blog</Nav.Link>
                         <Nav.Link className="text-white px-3" as={Link} to="/contact" eventKey={1} onClick={() => { window.scroll({ top: 0, left: 0, behavior: "smooth", }); }}>Me Contacter</Nav.Link>
-                      </Nav>                      
+                      </Nav>
                     </Navbar.Collapse>
                 </Container>
               </Navbar>

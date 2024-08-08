@@ -11,7 +11,7 @@ function Home() {
             <div className="text-center">
                 <h1>Bonjour, je suis John Doe</h1>
                 <h3>Développeur Web Full Stack</h3>
-                <Link class="btn btn-primary" to="/aboutme" onClick={() => { window.scroll({ top: 680, behavior: "smooth", }); }}>En savoir plus</Link>
+                <Link class="btn btn-primary" to="/" onClick={() => { window.scroll({ top: window.innerHeight , behavior: "smooth", }); }}>En savoir plus</Link>
             </div>
         </div>    
     )

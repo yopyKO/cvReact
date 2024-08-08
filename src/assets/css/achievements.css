@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 90%;
+    width: 80%;
    }
    element.style {
        width: 23rem;
@@ -13,4 +13,7 @@
            flex-basis: 26%;
            margin-bottom: 3rem;
        }
+   }
+   .buttonAchievements{
+    color: rgb(0, 153, 255);
    }

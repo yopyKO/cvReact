@@ -40,42 +40,41 @@ function App() {
 
   return (
     <>
-      <div className=''>
+      <div>
         
         <BrowserRouter>
-            <header className="navBar">
-              <Navbar expand="lg" class="d-flex position-absolute top-0 start-0 text-light" collapseOnSelect>
+            <header>
+              <Navbar collapseOnSelect expand="lg" className="bg-body-primary text-white d-flex position-absolute w-100 top-0 start-0 bg-dark text-white">
                 <Container>
-                  <Navbar.Brand href="/">JOHN DOE</Navbar.Brand>   
-                  <Navbar.Toggle class="right-2" aria-controls="basic-navbar-nav"/> 
-                    <Navbar.Collapse id="basic-navbar-nav" class="right-0">
-                      <Nav className="me-auto">
-                        <Nav.Link as={Link} to="/" eventKey={1} onClick={() => { window.scroll({ top: 0, left: 0, behavior: "smooth", }); }} >Accueil</Nav.Link>
-                        <Nav.Link as={Link} to="/services" eventKey={1} onClick={() => { window.scroll({ top: 0, left: 0, behavior: "smooth", }); }} >Services</Nav.Link>
-                        <Nav.Link as={Link} to="/achievements" eventKey={1} onClick={() => { window.scroll({ top: 0, left: 0, behavior: "smooth", }); }} >Réalisations</Nav.Link>
-                        <Nav.Link as={Link} to="/blog" eventKey={1} onClick={() => { window.scroll({ top: 0, left: 0, behavior: "smooth", }); }} >Blog</Nav.Link>
-                        <Nav.Link as={Link} to="/contact" eventKey={1} onClick={() => { window.scroll({ top: 0, left: 0, behavior: "smooth", }); }} >Me Contacter</Nav.Link>
-                      </Nav>
+                  <Navbar.Brand className="text-white" as={Link} to="/">JOHN DOE</Navbar.Brand>   
+                  <Navbar.Toggle aria-controls="responsive-navbar-nav" className='bg-secondary'/> 
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                      <Nav className="me-auto" id="empty_for_position"></Nav>
+                      <Nav>
+                        <Nav.Link className="text-white px-3" as={Link} to="/" eventKey={1} onClick={() => { window.scroll({ top: 0, left: 0, behavior: "smooth", }); }}>Accueil</Nav.Link>
+                        <Nav.Link className="text-white px-3" as={Link} to="/services" eventKey={1} onClick={() => { window.scroll({ top: 0, left: 0, behavior: "smooth", }); }}>Services</Nav.Link>
+                        <Nav.Link className="text-white px-3" as={Link} to="/achievements" eventKey={1} onClick={() => { window.scroll({ top: 0, left: 0, behavior: "smooth", }); }}>Réalisations</Nav.Link>
+                        <Nav.Link className="text-white px-3" as={Link} to="/blog" eventKey={1} onClick={() => { window.scroll({ top: 0, left: 0, behavior: "smooth", }); }}>Blog</Nav.Link>
+                        <Nav.Link className="text-white px-3" as={Link} to="/contact" eventKey={1} onClick={() => { window.scroll({ top: 0, left: 0, behavior: "smooth", }); }}>Me Contacter</Nav.Link>
+                      </Nav>                      
                     </Navbar.Collapse>
                 </Container>
               </Navbar>
 
             </header>
 
-            <body className=''>
-              <div className='h-100'>
+            <body>
+              <div>
                   <Routes>
-                    <Route path="/" element={<Home/>}></Route>
+                    <Route path="/" element={<><Home/><AboutMe/></>}></Route>
                     <Route path="/services" element={<Services/>}></Route>
                     <Route path="/achievements" element={<Achievements/>}></Route>
                     <Route path="/blog" element={<Blog/>}></Route>
                     <Route path="/contact" element={<Contact/>}></Route>
                     <Route path="/notices" element={<Notices/>}></Route>
-                    <Route path="/aboutme" element={<><Home/><AboutMe/></>}></Route>
                     <Route path="*" element={<PageNotFound/>}></Route>
                   </Routes>
-                </div> 
-          
+                </div>           
             </body>
           
 
@@ -131,11 +130,11 @@ function App() {
                       </ul>
                     </div>
                   
-            </div>
-                  <div className='secondary_footer'>
-                    © John Doe 2024
-                    <div id="up-button" className={isScrolledDown ? '' : 'show'}>
-                    <ScrollToTopButton/>
+                  </div>
+                    <div className='secondary_footer'>
+                      © John Doe 2024
+                      <div id="up-button" className={isScrolledDown ? '' : 'show'}>
+                      <ScrollToTopButton/>
                     </div> 
                   </div>
             
